@@ -27,7 +27,8 @@ check:
 	git config --local user.email "sammysismiling@gmail.com"; \
 	git config --local user.name "Samantha"; \
 	git add . 
-	git commit -m "test"
+	git commit -m "test" || true
+
 	git push 
 
 		
