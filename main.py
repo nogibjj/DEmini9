@@ -1,8 +1,8 @@
 """
 Main cli or app entry point
 """
-
-from mylib.calculator import *
+import pandas as pd
+from mylib.calculator import*
 
 import click
 

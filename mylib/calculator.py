@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataset = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
+# dataset = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
 
 def load_dataset(dataset):
     df = pd.read_csv(dataset)
