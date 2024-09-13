@@ -29,3 +29,5 @@ if __name__ == "__main__":
     # print(df)
     print(grab_mean(df, 'pace_impact'))
     create_histogram(df, 'mp')
+
+    save_to_md()
