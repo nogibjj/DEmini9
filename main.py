@@ -2,8 +2,8 @@
 Main cli or app entry point
 """
 import pandas as pd
-from mylib.calculator import*
-
+from mylib.calculator import *
+import matplotlib.pyplot as plt
 import click
 
 #var=1;var=2
