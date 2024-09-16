@@ -1,7 +1,12 @@
 [![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/format.yml)
+
+[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/install.yml)
+[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/lint.yml)
+[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/test.yml)
+
+## Template for Python projects with RUFF linter
 
 
 
@@ -29,9 +34,30 @@ Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff he
 
 * `githubactions`
 
-## References
+## Project Directory Structure
+The structure of the project is as follows:
 
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
+```text
+- ./
+    - repeat.sh
+    - setup.sh
+    - main.ipynb
+    - LICENSE
+    - requirements.txt
+    - READMEtmp.md
+    - Dockerfile
+    - Makefile
+    - test_lib.py
+    - readme_generator.py
+    - README.md
+    - main.py
+    - test.md
+    - test_main.py
+    - __pycache__/
+        - calculator.cpython-312.pyc
+    - mylib/
+        - lib.py
+        - __init__.py
 
 
 
