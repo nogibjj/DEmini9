@@ -14,4 +14,4 @@ jobs:
       - name: install packages
         run: make install
       - name: generate
-        run: make check
+        run: make test
