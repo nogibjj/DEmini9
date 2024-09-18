@@ -29,12 +29,15 @@ generate_and_push:
 	python test_main.py  # Replace with the actual command to generate the markdown
 
 	# Add, commit, and push the generated files to GitHub
+
+	# Check if there are any changes to commit and push
 	@if [ -n "$$(git status --porcelain)" ]; then \
 		git config --local user.email "sammysismiling@gmail.com"; \
-		git config --local user.name "Samantha"; \		
+		git config --local user.name "Samantha"; \
 		git add .; \
 		git commit -m "Add generated plot and report"; \
 		git push; \
 	else \
 		echo "No changes to commit. Skipping commit and push."; \
 	fi
+
