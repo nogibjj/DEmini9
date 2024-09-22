@@ -20,6 +20,7 @@ def test_custom_describe():
 def test_general_viz_combined():
     # TODO: Add tests for general_viz_combined
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"   
+    general_df = load_and_preprocess(csv)
     general_viz_combined(general_df, True)
     pass
 
