@@ -18,9 +18,9 @@ def test_load_and_preprocess():
     return general_df
 
 
-def test_stats(general_df):
+def test_stats():
     """test that checks the data operations is working"""
-    general_df = load_and_preprocess(example_csv)
+    # general_df = load_and_preprocess(example_csv)
     # print(general_df)
     # print(general_df.shape)
     assert general_df is not None
@@ -44,4 +44,4 @@ if __name__ == "__main__":
     example_csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
 
     general_df = test_load_and_preprocess()
-    test_stats(general_df)
+    test_stats()
