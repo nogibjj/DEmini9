@@ -55,13 +55,14 @@ def save_to_markdown(csv):
         file.write("![congress_viz2](nba_poss.png)\n")
 
 
-# if __name__ == "__main__":
-#     # pylint: disable=no-value-for-parameter
-#     # add_cli()
-#     dataset = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-#     df = load_and_preprocess(dataset)
-#     # print(df)
-#     print(process_mean(df, 'mp'))
-#     NBA_histogram_poss(df, jupyter_render)
-
-#     # generate_markdown()
+if __name__ == "__main__":
+    # pylint: disable=no-value-for-parameter
+    # add_cli()
+    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
+    general_df = load_and_preprocess(csv)
+    custom_describe(csv, "mp")
+    general_viz_combined(general_df, True)
+    save_to_markdown(csv)
+    # print(df)
+    # print(process_mean(df, 'mp'))
+    # NBA_histogram_poss(df, jupyter_render)

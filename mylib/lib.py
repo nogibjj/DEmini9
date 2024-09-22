@@ -36,7 +36,7 @@ def process_quantile(general_df, col, quantile_num):
 
 # Data Vizualization
 def NBA_histogram_poss(general_df, jupyter_render):
-    """generate a histogram of poss of distbution of congress members"""
+    """generate a histogram of poss of distbution of NBA members"""
     plt.figure(figsize=(10, 6))
     plt.hist(general_df["poss"], bins=20, edgecolor="black")
     plt.title("Poss Distribution of NBA Members")
@@ -50,15 +50,28 @@ def NBA_histogram_poss(general_df, jupyter_render):
 
 
 def NBA_bar_mp(general_df, jupyter_render):
-    """generate a bar graph of state distrubution of congress members"""
-    gender_counts = general_df["mp"].value_counts()
-    plt.figure(figsize=(15, 6))
-    gender_counts.plot(kind="bar", color="salmon")
-    plt.title("MP Distribution of Congress Members")
-    plt.xlabel("mp")
-    plt.ylabel("Count")
-    plt.xticks(rotation=0)
-    if not jupyter_render:
-        plt.savefig("NBA_mp.png")
-    else:
+    """generate a bar graph of state distrubution of NBA members"""
+    print("HERE")
+    mp_data = general_df['mp']  
+    # Create subplots
+    fig, ax = plt.subplots(2, 1, figsize=(10, 8)) 
+
+    # Histogram of Minutes Played
+    ax[0].hist(mp_data, bins=10, color='blue', alpha=0.7)
+    ax[0].set_title('Distribution of Minutes Played by NBA Players')  # Corrected method
+    ax[0].set_xlabel('Minutes Played')  # Corrected method
+    ax[0].set_ylabel('Frequency')
+
+    # Example of adding another plot (e.g., box plot)
+    ax[1].boxplot(mp_data, vert=False, patch_artist=True, boxprops=dict(facecolor='lightblue'))
+    ax[1].set_title('Box Plot of Minutes Played by NBA Players')  # Corrected method
+    ax[1].set_xlabel('Minutes Played')  # Corrected method
+
+    # Adjust layout
+    plt.tight_layout()
+
+    # Render in Jupyter Notebook if specified
+    if jupyter_render:
         plt.show()
+    else:
+        plt.savefig('mp_distribution.png')

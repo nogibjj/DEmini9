@@ -136,7 +136,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-readme_generator.py
+/generator
 READMEtmp.md 
+setup.sh
+repeat.sh
 
+
+LICENSE

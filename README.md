@@ -6,8 +6,7 @@
 [![Lint](https://github.com/nogibjj/DEIndividual1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/lint.yml)
 [![Test](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml)
 
-## Template for Python projects with RUFF linter
-
+## Explore the matrix of NBA players 
 
 
 1. First thing to do on launch is to open a new shell and verify virtual env is sourced.
@@ -26,9 +25,9 @@ Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff he
 
 * `Dockerfile`
 
-* `GitHub copilot`
+* `jupyter`  `ipython` 
 
-* `jupyter` and `ipython` 
+*  `nbval-test`  `.pdf` 
 
 * A base set of libraries for devops and web
 
@@ -48,16 +47,27 @@ The structure of the project is as follows:
     - Dockerfile
     - Makefile
     - test_lib.py
-    - readme_generator.py
     - README.md
+    - nbval_test.py
     - main.py
-    - test.md
     - test_main.py
+    - nbval_results.md
     - __pycache__/
         - calculator.cpython-312.pyc
+    - generator/
+        - test_generator.py
+        - readme_generator.py
     - mylib/
         - lib.py
         - __init__.py
+        - __pycache__/
+            - test_lib.cpython-311.pyc
+            - test_lib.cpython-312.pyc
+            - __init__.cpython-312.pyc
+            - lib.cpython-311.pyc
+            - __init__.cpython-311.pyc
+            - lib.cpython-312.pyc
+```
 
 
 

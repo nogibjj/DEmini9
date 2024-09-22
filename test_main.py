@@ -1,39 +1,33 @@
-"""
-Test goes here
-
-"""
-
-import matplotlib.pyplot as plt
-from mylib.test_lib import *
+import pytest
+from main import *
 
 
 
-#  Generate Markdown File
-def generate_markdown():
-    markdown_content = """
-# Sample Plot Report
+def test_general_describe():
+    # TODO: Add tests for general_describe
+    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
+    general_describe(csv)
+    pass
 
-This is a sample report generated in Markdown format.
 
-## Plot
+def test_custom_describe():
+    # TODO: Add tests for custom_describe
+    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"    
+    custom_describe(csv, "mp")
+    pass
 
-Below is a plot generated from the data:
 
-![Sample Plot](./plot.png)
+def test_general_viz_combined():
+    # TODO: Add tests for general_viz_combined
+    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"   
+    general_viz_combined(general_df, True)
+    pass
 
-## Conclusion
+    
+    
 
-This is an auto-generated report from the Python script.
-    """
-
-    # Step 3: Write Markdown content to a file
-    with open('report.md', 'w') as f:
-        f.write(markdown_content)
-
-if __name__ == "__main__":
-    # create_plot()
-    example_csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-
-    test_load_and_preprocess()
-    test_stats()
-    generate_markdown()
+def test_save_to_markdown():
+    # TODO: Add tests for save_to_markdown
+    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"   
+    save_to_markdown(csv)
+    pass
