@@ -9,11 +9,8 @@ format:
 	black *.py 
 
 lint:
-
-    pylint --disable=C0303,R1735,C0114,C,C0103,W0621,W1510,W,W1514,W0612,E *.py mylib/*.py **/*.py
-
+    pylint --disable=C,E,W *.py mylib/*.py **/*.py
     # pylint --disable=W0621,W1510,W1514,W0612 *.py mylib/*.py src/**/*.py
-
 	ruff check *.py mylib/*.py test_*.py *.ipynb
     # pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
 
@@ -24,7 +21,7 @@ refactor: format lint
 
 deploy:
 	#deploy goes here
-		
+
 all: install lint test format deploy
 
 generate_and_push:
@@ -43,4 +40,3 @@ generate_and_push:
 	else \
 		echo "No changes to commit. Skipping commit and push."; \
 	fi
-
