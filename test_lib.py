@@ -27,7 +27,7 @@ def test_process_median():
     # TODO: Add tests for process_median
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
     df = load_and_preprocess(csv)
-    process_mean(df,'mp')
+    process_median(df,'mp')
     pass
 
 
@@ -35,7 +35,7 @@ def test_process_std():
     # TODO: Add tests for process_std
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
     df = load_and_preprocess(csv)
-    process_mean(df,'mp')
+    process_std(df,'mp')
     pass
 
 
@@ -43,7 +43,7 @@ def test_process_quantile():
     # TODO: Add tests for process_quantile
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
     df = load_and_preprocess(csv)
-    process_mean(df,'mp',0.25)
+    process_quantile(df,'mp',0.25)
     pass
 
 
