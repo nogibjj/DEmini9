@@ -1,4 +1,22 @@
 
+# name: Lint
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+#   workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: install packages
+#         run: make install
+#       - name: lint
+#         run: make lint
 name: Lint
 
 on:
@@ -11,9 +29,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
-      - name: install packages
-        run: make install
-      - name: lint
-        run: make lint
+
+      # Install dependencies
+      - name: Install packages
+        run: |
+          make install  
+          pip install pylint  
+
+      # Run linting
+      - name: Lint
+        run: make lint  # Runs the lint command defined in the Makefile
