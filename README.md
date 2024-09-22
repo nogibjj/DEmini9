@@ -1,10 +1,10 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/DEIndividual1/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/cicd.yml)
 
-[![Format](https://github.com/nogibjj/python-ruff-template/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/format.yml)
+[![Format](https://github.com/nogibjj/DEIndividual1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/format.yml)
 
-[![Install](https://github.com/nogibjj/python-ruff-template/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/install.yml)
-[![Lint](https://github.com/nogibjj/python-ruff-template/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/lint.yml)
-[![Test](https://github.com/nogibjj/python-ruff-template/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/test.yml)
+[![Install](https://github.com/nogibjj/DEIndividual1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/install.yml)
+[![Lint](https://github.com/nogibjj/DEIndividual1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/lint.yml)
+[![Test](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml)
 
 ## Template for Python projects with RUFF linter
 

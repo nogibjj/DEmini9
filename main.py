@@ -8,9 +8,8 @@ from mylib.lib import (
     process_quantile,
     process_median,
     process_std,
-    congress_histogram_viz,
-    congress_line_viz,
-    congress_bar_viz,
+    NBA_bar_mp,
+    NBA_histogram_poss
 )
 
 
@@ -35,9 +34,9 @@ def custom_describe(csv, col):
 
 def general_viz_combined(general_df, jupyter_render):
     """saves all the figures at once"""
-    congress_histogram_viz(general_df, jupyter_render)
-    congress_line_viz(general_df, jupyter_render)
-    congress_bar_viz(general_df, jupyter_render)
+    NBA_bar_mp(general_df, jupyter_render)
+    NBA_histogram_poss(general_df, jupyter_render)
+
 
 
 def save_to_markdown(csv):
@@ -47,23 +46,22 @@ def save_to_markdown(csv):
     markdown_table1 = describe_df.to_markdown()
     general_viz_combined(general_df, False)
     # Write the markdown table to a file
-    with open("congress_summary.md", "w", encoding="utf-8") as file:
+    with open("nba_summary.md", "w", encoding="utf-8") as file:
         file.write("Describe:\n")
         file.write(markdown_table1)
         file.write("\n\n")  # Add a new line
-        file.write("![congress_viz](congress_age.png)\n")
+        file.write("![congress_viz](nba_mp.png)\n")
         file.write("\n\n")  # Add a new line
-        file.write("![congress_viz2](congress_party.png)\n")
-        file.write("\n\n")  # Add a new line
-        file.write("![congress_viz3](congress_state.png)\n")
+        file.write("![congress_viz2](nba_poss.png)\n")
+
 
 # if __name__ == "__main__":
 #     # pylint: disable=no-value-for-parameter
 #     # add_cli()
 #     dataset = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-#     df = load_dataset(dataset)
+#     df = load_and_preprocess(dataset)
 #     # print(df)
-#     print(grab_mean(df, 'pace_impact'))
-#     create_histogram(df, 'mp')
+#     print(process_mean(df, 'mp'))
+#     NBA_histogram_poss(df, jupyter_render)
 
-#     save_to_md()
+#     # generate_markdown()

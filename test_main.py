@@ -4,26 +4,11 @@ Test goes here
 """
 
 import matplotlib.pyplot as plt
+from mylib.test_lib import *
 
-# Step 1: Generate a Plot
-def create_plot():
-    # Sample data for plotting
-    x = [1, 2, 3, 4, 5]
-    y = [10, 20, 15, 25, 30]
 
-    # Create a plot
-    plt.figure(figsize=(6, 4))
-    plt.plot(x, y, label='Sample Data', marker='o')
-    plt.title('Sample Plot')
-    plt.xlabel('X-axis')
-    plt.ylabel('Y-axis')
-    plt.legend()
 
-    # Save the plot as an image (e.g., PNG)
-    plt.savefig('plot.png')
-    plt.close()
-
-# Step 2: Generate Markdown File
+#  Generate Markdown File
 def generate_markdown():
     markdown_content = """
 # Sample Plot Report
@@ -46,5 +31,9 @@ This is an auto-generated report from the Python script.
         f.write(markdown_content)
 
 if __name__ == "__main__":
-    create_plot()
+    # create_plot()
+    example_csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
+
+    test_load_and_preprocess()
+    test_stats()
     generate_markdown()
