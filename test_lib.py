@@ -20,7 +20,7 @@ def test_load_and_preprocess():
 
 def test_stats(general_df):
     """test that checks the data operations is working"""
-    # general_df = load_and_preprocess(example_csv)
+    general_df = load_and_preprocess(example_csv)
     # print(general_df)
     # print(general_df.shape)
     assert general_df is not None
