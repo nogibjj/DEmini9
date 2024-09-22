@@ -66,42 +66,4 @@ The structure of the project is as follows:
 
 * `Demo Video`  
 
-
-## Project Directory Structure
-The structure of the project is as follows:
-
-```text
-- ./
-    - repeat.sh
-    - setup.sh
-    - main.ipynb
-    - LICENSE
-    - requirements.txt
-    - READMEtmp.md
-    - Dockerfile
-    - Makefile
-    - test_lib.py
-    - README.md
-    - nbval_test.py
-    - main.py
-    - test_main.py
-    - nbval_results.md
-    - __pycache__/
-        - calculator.cpython-312.pyc
-    - generator/
-        - test_generator.py
-        - readme_generator.py
-    - mylib/
-        - lib.py
-        - __init__.py
-        - __pycache__/
-            - test_lib.cpython-311.pyc
-            - test_lib.cpython-312.pyc
-            - __init__.cpython-312.pyc
-            - lib.cpython-311.pyc
-            - __init__.cpython-311.pyc
-            - lib.cpython-312.pyc
-```
-
-
-
+[View the Document](main.pdf)
