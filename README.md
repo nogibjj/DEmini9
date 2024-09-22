@@ -8,6 +8,24 @@
 
 ## Explore the matrix of NBA players 
 
+
+## Dataset
+The Best NBA Players, According To RAPTOR
+Ratings, updated daily, use play-by-play and player-tracking data to calculate each player’s individual plus-minus measurements and wins above replacement, which accounts for playing time
+https://github.com/fivethirtyeight/data/tree/master/nba-raptor 
+
+## Techniques Applied
+Pandas, test by nbval, show up the outcome by Jupyter.
+
+## Data Visualization
+
+![Minutes Played](mp_distribution.png)
+![Distribution of Poss](NBA_poss.png)
+## Summary Statistics
+
+[View the Document](main.pdf)
+
+
 ## Project Directory Structure
 The structure of the project is as follows:
 
