@@ -8,30 +8,64 @@
 
 ## Explore the matrix of NBA players 
 
+## Project Directory Structure
+The structure of the project is as follows:
 
-1. First thing to do on launch is to open a new shell and verify virtual env is sourced.
+```text
+- ./
+    - repeat.sh
+    - setup.sh
+    - main.ipynb
+    - LICENSE
+    - requirements.txt
+    - READMEtmp.md
+    - Dockerfile
+    - Makefile
+    - test_lib.py
+    - README.md
+    - nbval_test.py
+    - main.py
+    - test_main.py
+    - nbval_results.md
+    - __pycache__/
+        - calculator.cpython-312.pyc
+    - generator/
+        - test_generator.py
+        - readme_generator.py
+    - mylib/
+        - lib.py
+        - __init__.py
+        - __pycache__/
+            - test_lib.cpython-311.pyc
+            - test_lib.cpython-312.pyc
+            - __init__.cpython-312.pyc
+            - lib.cpython-311.pyc
+            - __init__.cpython-311.pyc
+            - lib.cpython-312.pyc
+```
 
-Things included are:
+1. Things included are:
 
-* `Makefile`
+* `Jupyter`  `main.ipynb`  
 
-* `Pytest`
+* `Python Script`  `main.py` 
 
 * `pandas`
 
-* `Ruff`:  
+* `nbval test`  `nbval_test.py`   `main.pdf`  
 
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
+* `mylib/lib.py`
 
-* `Dockerfile`
+* `Makefile`  `Lint and Ruff`
 
-* `jupyter`  `ipython` 
+* `Pytest` `test_main.py` `test_lib.py`
 
-*  `nbval-test`  `.pdf` 
+* `requirements.txt`
 
-* A base set of libraries for devops and web
+* `Gitlab/Github Actions`
 
-* `githubactions`
+* `Demo Video`  
+
 
 ## Project Directory Structure
 The structure of the project is as follows:
