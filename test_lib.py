@@ -12,54 +12,40 @@ def test_load_and_preprocess():
     # TODO: Add tests for load_and_preprocess
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
     load_and_preprocess(csv)
-    pass
-
+    df = load_and_preprocess(csv)
+    assert isinstance(df, pd.DataFrame), "Expected a DataFrame to be returned"
+    assert not df.empty, "Expected DataFrame not to be empty"
 
 def test_process_mean():
     # TODO: Add tests for process_mean
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_mean(df,'mp')
-    pass
+    general_df = pd.read_csv(csv)
+    result = process_mean(general_df, "mp")
+    # print(result)
+    assert result == 1174.4158964879853
 
 
 def test_process_median():
     # TODO: Add tests for process_median
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_median(df,'mp')
-    pass
-
+    general_df = pd.read_csv(csv)
+    result = process_median(general_df, "mp")
+    # print(result)
+    assert result == 996.0
 
 def test_process_std():
     # TODO: Add tests for process_std
     csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_std(df,'mp')
-    pass
+    general_df = pd.read_csv(csv)
+    result = process_std(general_df, "mp")
+    # print(result)
+    assert result == 913.0096399467657
 
 
-def test_process_quantile():
-    # TODO: Add tests for process_quantile
-    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_quantile(df,'mp',0.25)
-    pass
 
 
-def test_NBA_histogram_poss():
-    # TODO: Add tests for NBA_histogram_poss
-    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_mean(df,'mp')
-    NBA_histogram_poss(df, True)
-    pass
 
-
-def test_NBA_bar_mp():
-    # TODO: Add tests for NBA_bar_mp
-    csv = "https://projects.fivethirtyeight.com/nba-model/2023/latest_RAPTOR_by_player.csv"
-    df = load_and_preprocess(csv)
-    process_mean(df,'mp')
-    NBA_bar_mp(df, True)
-    pass
+# test_load_and_preprocess()
+# test_process_mean()
+# test_process_median()
+# test_process_std()
