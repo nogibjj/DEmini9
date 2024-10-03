@@ -25,7 +25,7 @@ Pandas, test by nbval, show up the outcome by Jupyter.
 [View the Document](assets/main.pdf)
 
 ## Main points in Video
-https://youtu.be/ufjxtGhLizk 
+https://youtu.be/Ai-haGABJM0 
 - Brief the project, Data source, main purpose
 
 ```Techniques required
