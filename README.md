@@ -22,7 +22,7 @@ Pandas, test by nbval, show up the outcome by Jupyter.
 ![Distribution of Poss](assets/NBA_poss.png)
 ## Summary Statistics
 
-[View the Document](main.pdf)
+[View the Document](assets/main.pdf)
 
 ## Main points in Video
 https://youtu.be/ufjxtGhLizk 
