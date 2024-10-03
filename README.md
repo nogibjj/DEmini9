@@ -19,7 +19,7 @@ Pandas, test by nbval, show up the outcome by Jupyter.
 ## Data Visualization
 
 ![Minutes Played](assets/mp_distribution.png)
-![Distribution of Poss](assets/NBA_poss.png)
+
 ## Summary Statistics
 
 [View the Document](assets/main.pdf)
@@ -45,35 +45,6 @@ https://youtu.be/ufjxtGhLizk
 ```
 
 
-## Project Directory Structure
-The structure of the project is as follows:
-
-```text
-- ./
-    - repeat.sh
-    - setup.sh
-    - main.ipynb
-    - LICENSE
-    - requirements.txt
-    - READMEtmp.md
-    - Dockerfile
-    - Makefile
-    - test_lib.py
-    - README.md
-    - nbval_test.py
-    - main.py
-    - test_main.py
-    - nbval_results.md
-    - __pycache__/
-        - calculator.cpython-312.pyc
-    - generator/
-        - test_generator.py
-        - readme_generator.py
-    - mylib/
-        - lib.py
-        - __init__.py
-        - __pycache__/
-
 ```
 
 1. Things included are:
@@ -98,4 +69,4 @@ The structure of the project is as follows:
 
 * `Demo Video`  
 
-[View the Document](main.pdf)
+
