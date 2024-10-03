@@ -45,7 +45,7 @@ def test_process_std():
 
 
 
-# test_load_and_preprocess()
-# test_process_mean()
-# test_process_median()
-# test_process_std()
+test_load_and_preprocess()
+test_process_mean()
+test_process_median()
+test_process_std()

@@ -29,6 +29,6 @@ def test_custom_describe():
 
 
 
-# test_general_describe()
-# test_custom_describe()
+test_general_describe()
+test_custom_describe()
           
