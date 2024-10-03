@@ -18,8 +18,8 @@ Pandas, test by nbval, show up the outcome by Jupyter.
 
 ## Data Visualization
 
-![Minutes Played](mp_distribution.png)
-![Distribution of Poss](NBA_poss.png)
+![Minutes Played](assets/mp_distribution.png)
+![Distribution of Poss](assets/NBA_poss.png)
 ## Summary Statistics
 
 [View the Document](main.pdf)
