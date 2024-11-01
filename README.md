@@ -5,7 +5,12 @@
 [![Test](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/DEIndividual1/actions/workflows/test.yml)
 
 
-## Explore the matrix of NBA players 
+## Cloud-Hosted Notebook Data Manipulation
+## Google Collab Link
+ https://colab.research.google.com/drive/1_mOEmJiIO-8Zk2d7i7ryiTh6YLNhvHuY#scrollTo=HbfqXNgenuba
+ 
+### Purpose of Project
+The project's purpose is to demonstrate proficiency in setting up and utilizing a cloud-hosted Jupyter Notebook environment, specifically using Google Colab. This includes performing data manipulation tasks on a provided sample dataset. 
 
 
 ## Dataset
@@ -13,60 +18,18 @@ The Best NBA Players, According To RAPTOR
 Ratings, updated daily, use play-by-play and player-tracking data to calculate each player’s individual plus-minus measurements and wins above replacement, which accounts for playing time
 https://github.com/fivethirtyeight/data/tree/master/nba-raptor 
 
-## Techniques Applied
-Pandas, test by nbval, show up the outcome by Jupyter.
+## Preparation 
+1. Open codespaces 
+2. Wait for container to be built and pinned requirements from `requirements.txt` to be installed 
+3. If running locally, `git clone` the repository and use `make install`
 
-## Data Visualization
+## Check format and test errors
+1. Format code `make format`
+2. Lint code `make lint`
 
-![Minutes Played](assets/mp_distribution.png)
+## References 
+https://github.com/nogibjj/python-ruff-template 
+https://github.com/nogibjj/DEIndividual1
 
-## Summary Statistics
-
-[View the Document](assets/main.pdf)
-
-## Main points in Video
-https://youtu.be/Ai-haGABJM0 
-- Brief the project, Data source, main purpose
-
-```Techniques required
-- ./
-    - Jupyter Notebook with: 
-        - Cells that perform descriptive statistics using Polars or Panda.
-        - Tested by using nbval plugin for pytest
-    - Makefile with the following:
-        - Run all tests (must test notebook and script and lib)
-        - Formats code with Python blackLinks to an external site.
-        - Lints code with RuffLinks to an external site.
-        - Installs code via:  pip install -r requirements.txt
-    - test_script.py to test script
-    - test_lib.py to test library
-    - Pinned requirements.txt
-    - Gitlab Actions performs all four Makefile commands with badges for each one in the README.md
-```
-
-
-```
-
-1. Things included are:
-
-* `Jupyter`  `main.ipynb`  
-
-* `Python Script`  `main.py` 
-
-* `pandas`
-
-* `nbval test`  `nbval_test.py`   `main.pdf`  
-
-* `mylib/lib.py`
-
-* `Makefile`  `Lint and Ruff`
-
-* `Pytest` `test_main.py` `test_lib.py`
-
-* `requirements.txt`
-
-* `Gitlab/Github Actions`
-
-* `Demo Video`  
 
 
